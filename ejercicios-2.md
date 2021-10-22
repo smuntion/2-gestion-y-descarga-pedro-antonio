@@ -79,7 +79,7 @@ Usa la documentación de `find` para encontrar todos los notebook Jupyter con fe
 
 ### Respuesta ejercicio 2
 
-
+![man find](images/man find.PNG)
 ## Ejercicio 3
 Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/). 
 - Inspecciona el fichero CHECKSUMS y genera los checksums adecuados para asegurarte de que los datos son íntegros. 
@@ -87,3 +87,5 @@ Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ft
 
 
 ### Respuesta ejercicio 3
+
+![curlURL](images/curlURL.PNG)
