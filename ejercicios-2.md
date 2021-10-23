@@ -87,5 +87,10 @@ Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ft
 
 
 ### Respuesta ejercicio 3
-
+Aplicamos el comando:
+`wget --accept "*.gtf" --no-directories --recursive --no-parent ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/`
+![wget](images/wget.png)
+Pero no funcionó, miramos con el comando `wget --help` pero no encontramos solución a este problema, por lo que empleamos el comando: 
+`curl ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/`
 ![curlURL](images/curlURL.PNG)
+Con este comando podemos ver el fichero CHECKSUMS, pero no lo tenemos copiado en nuestro repositorio para inspeccionarlo. 
