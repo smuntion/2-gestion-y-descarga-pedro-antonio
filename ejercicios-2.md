@@ -19,7 +19,7 @@ Crea una copia de la carpeta gtfs. Luego crea enlaces duros y blandos a los fich
 
 ### Respuesta ejercicio 1
 
-Hemos copiado la carpeta gtfs a otra que se llama gtfs2 después, hemos realizado una copia del archivo `Drosophila_melanogaster.BDGP6.28.102.gtf` y hemos llamado a la copia `Drosophila_melanogaster.BDGP6.28.102-copy.gtf` para ello hemos empleado el comando `cp 2-gestion-y-descarga-pedro-antonio/gtfs/Drosophila_melanogaster.BDGP6.28.102-copy.gtf 2-gestion-y-descarga-pedro-antonio/gtfs2`. Después hemos creado un enlace duro y uno blando al archivo `Drosophila_melanogaster.BDGP6.28.102-copy.gtf`, para crear el enlace duro se ha empleado el comando `ln /home/pedrojf/2-gestion-y-descarga-pedro-antonio/gtfs2/Drosophila_melanogaster.BDGP6.28.102-copy.gtf prueba-1`, mientras que para el blando el comando `ln -s /home/pedrojf/2-gestion-y-descarga-pedro-antonio/gtfs2/Drosophila_melanogaster.BDGP6.28.102-copy.gtf prueba-2`. Al enlace duro lo hemos denominado `prueba-1` y al blando `prueba-2`.
+Hemos copiado la carpeta gtfs a otra que se llama gtfs2 después, hemos realizado una copia del archivo `Drosophila_melanogaster.BDGP6.28.102.gtf` y hemos llamado a la copia `Drosophila_melanogaster.BDGP6.28.102-copy.gtf` para ello hemos empleado el comando `cp 2-gestion-y-descarga-pedro-antonio/gtfs/Drosophila_melanogaster.BDGP6.28.102-copy.gtf 2-gestion-y-descarga-pedro-antonio/gtfs2`. Después hemos creado un enlace duro y uno blando al archivo `Drosophila_melanogaster.BDGP6.28.102-copy.gtf`, para crear el enlace duro se ha empleado el comando `ln /home/pedrojf/2-gestion-y-descarga-pedro-antonio/gtfs2/Drosophila_melanogaster.BDGP6.28.102-copy.gtf prueba-1`, mientras que para el blando el comando `ln -s /home/pedrojf/2-gestion-y-descarga-pedro-antonio/gtfs2/Drosophila_melanogaster.BDGP6.28.102-copy.gtf prueba-2`. Al enlace duro lo hemos denominado prueba-1 y al blando prueba-2. 
 
 ![crear-enlaces](images/crear-enlaces.jpg)
 
@@ -79,7 +79,7 @@ Usa la documentación de `find` para encontrar todos los notebook Jupyter con fe
 
 ### Respuesta ejercicio 2
 
-![man find](images/man find.PNG)
+![manfind](images/manfind.png)
 ## Ejercicio 3
 Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/). 
 - Inspecciona el fichero CHECKSUMS y genera los checksums adecuados para asegurarte de que los datos son íntegros. 
