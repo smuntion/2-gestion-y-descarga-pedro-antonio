@@ -95,6 +95,6 @@ Aplicamos el comando:
 
 ![wget](images/wget.jpg)
 
-Tras finalizar la descarga la terminal indica que se han descargado 4 archivos que pesan 12M en un tiempo de 1,0 S tal y como se muestra en la siguiente imágen:
+Tras finalizar la descarga la terminal indica que se han descargado 4 archivos que pesan 12M en un tiempo de 1,0s tal y como se muestra en la siguiente imágen:
 
 ![wget-resume](images/wget-resume.jpg)
