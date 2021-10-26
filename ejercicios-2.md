@@ -91,7 +91,7 @@ Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ft
 ### Respuesta ejercicio 3
 
 Para descargar los datos aplicamos el comando:
-`wget --no-directories --recursive --no-parent ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/`
+`wget --no-directories --recursive --no-parent ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/`.
 
 ![wget](images/wget.jpg)
 
