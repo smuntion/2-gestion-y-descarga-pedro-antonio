@@ -104,9 +104,11 @@ Tras la descarga hay 4 archivos en el directorio, 2 con extensión gtf.gz, uno d
 Tras generar en nuestra máquina los cheksums empleando el algoritmo CRC mediante el comando `sum ./[!C]*` ([!C] sirve para excluir los ficheros que emppiezan por C, en este caso CHEKSUMS ya que no pide que comparemos este en el ejercicio) se han obtenido los siguientes resultados:
 
 Documento CHEKSUMS:
+
 ![crc-original](images/crc-original.PNG)
 
 CRC generados:
+
 ![crc-generados](images/crc-generado.PNG)
 
 Tal y como se aprecia en las dos imágenes anteriores los cheksums son idénticos, lo cuál quiere decir que se mantiene la integridad de los archivos tras su descarga.
