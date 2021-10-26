@@ -78,10 +78,15 @@ Tal y como se aprecia en la imágen, al copiar el enlace duro se ha generado otr
 Usa la documentación de `find` para encontrar todos los notebook Jupyter con fecha de última modificación 30 de Noviembre de 2020 que haya en tu directorio HOME. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto `.`). 
 
 ### Respuesta ejercicio 2
-Para la fecha de última modificación, emplenado el comando `man find`buscamos información sobre los distintos comandos distintos que podemos emplear junto a find. Y encontramos que para la fecha de última modificación emplearemos el comando: .....................
-
+Para la fecha de última modificación, emplenado el comando `man find`buscamos información sobre los distintos comandos distintos que podemos emplear junto a find. Y encontramos que para la fecha de última modificación emplearemos el comando: 
+`find -mtime (días desde la última modificación`
 
 ![manfind](images/manfind.png)
+
+Introduciendo el comando: 
+`find`
+Dentro de /home, vemos que el unico directorio donde nos permite hacer la búsqueda con find es en el de alejandro. 
+
 ## Ejercicio 3
 Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/). 
 - Inspecciona el fichero CHECKSUMS y genera los checksums adecuados para asegurarte de que los datos son íntegros. 
