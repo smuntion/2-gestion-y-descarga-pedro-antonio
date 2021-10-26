@@ -90,7 +90,7 @@ Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ft
 
 ### Respuesta ejercicio 3
 
-Aplicamos el comando:
+Para descargar los datos aplicamos el comando:
 `wget --no-directories --recursive --no-parent ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/`
 
 ![wget](images/wget.jpg)
@@ -98,3 +98,21 @@ Aplicamos el comando:
 Tras finalizar la descarga la terminal indica que se han descargado 4 archivos que pesan 12M en un tiempo de 1,0s tal y como se muestra en la siguiente imágen:
 
 ![wget-resume](images/wget-resume.jpg)
+
+Tras la descarga hay 4 archivos en el directorio, 2 con extensión gtf.gz, uno denominado README y uno que se llama CHEKSUMS que contiene los cheksums generados según el algoritmo CRC.
+
+Tras generar en nuestra máquina los cheksums empleando el algoritmo CRC mediante el comando `sum ./[!C]*` ([!C] sirve para excluir los ficheros que emppiezan por C, en este caso CHEKSUMS ya que no pide que comparemos este en el ejercicio) se han obtenido los siguientes resultados:
+
+Documento CHEKSUMS:
+![crc-original](images/crc-original.PNG)
+
+CRC generados:
+![crc-generados](images/crc-generado.PNG)
+
+Tal y como se aprecia en las dos imágenes anteriores los cheksums son idénticos, lo cuál quiere decir que se mantiene la integridad de los archivos tras su descarga.
+
+Finalmente generamos un fichero SHA-1 con los cheksums para los dos ficheros .gz, a este fichero lo hemos denominado gtf.gz-cheksums.sha y lo hemos creado mediante el comando `shasum ./*.gtf.gz > gtf.gz-cheksums.sha`.
+
+![shasum](images/shasum.PNG)
+
+Fichero SHA-1: [gtf.gz-cheksums.sha](documents/gtf.gz-cheksums.sha)
