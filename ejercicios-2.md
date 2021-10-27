@@ -75,13 +75,35 @@ Comandos introducidos:
 Tal y como se aprecia en la imágen, al copiar el enlace duro se ha generado otro enlace duro que apunta a un inodo diferente, mientras que al copiar el enlace blando se ha creado un enlace duro que apunta de nuevo a un inodo distinto al de los otros enlaces.
 
 ## Ejercicio 2
-Usa la documentación de `find` para encontrar todos los notebook Jupyter con fecha de última modificación 30 de Noviembre de 2020 que haya en tu directorio HOME. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto `.`). 
+Usa la documentación de find para encontrar las opciones que permiten encontrar todos los notebook Jupyter (ficheros con extension ipynb) con fecha de última modificación 17 de Noviembre de 2020 que haya en el directorio /home/alejandro. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto ).
+
+
+
 
 ### Respuesta ejercicio 2
-Para la fecha de última modificación, emplenado el comando `man find`buscamos información sobre los distintos comandos distintos que podemos emplear junto a find. Y encontramos que para la fecha de última modificación emplearemos el comando: .....................
+Para encontrar los notebook Jupyter (ficheros con extensión ipynb) en el directorio home alejandro primero de todo nos metemos en el directorio y miramos los ficheros que contiene este (también los ocultos) con el comando: `ls -a`
 
+Tras esto procedemos a buscar solo los notebook Jupiter (con extensión .ipynb) que no se encuentren dentro de directorios ocultos (que empiecen por .). Para ello empleamos el comando: 
+`find /home/alejandro/[!.]*.ipynb`
+
+
+Por último para buscar fecha de última modificación, empleamos el comando `man find` y encontramos que para la fecha de última modificación emplearemos el comando: 
+`find -mtime (días desde la última modificación)`
 
 ![manfind](images/manfind.png)
+
+Ahora procedemos a usar este comando junto al otro del nombre sabiendo que los días que han pasado son 344 como se muestra en la foto:
+
+
+El comando empleado es:
+`find /home/alejandro/[!.]*.ipynb -mtime 344`
+Y para comprobar que hemos encontrado el fichero correcto empleamos el comando:
+`ls -l /home/alejandro/un_cuaderno.ipynb`
+Que nos permite ver la fecha de última modificación del documento (17 de noviembre de 2020). 
+
+
+
+
 ## Ejercicio 3
 Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/). 
 - Inspecciona el fichero CHECKSUMS y genera los checksums adecuados para asegurarte de que los datos son íntegros. 
