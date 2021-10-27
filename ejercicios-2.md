@@ -90,11 +90,12 @@ Tras esto procedemos a buscar solo los notebook Jupiter (con extensión .ipynb) 
 
 ![find](images/find.PNG)
 
-![MTIME](images/MTIME.PNG)
+
 Por último para buscar fecha de última modificación, empleamos el comando `man find` y encontramos que para la fecha de última modificación emplearemos el comando: 
 `find -mtime (días desde la última modificación)`
 
 ![manfind](images/manfind.png)
+![MTIME](images/MTIME.PNG)
 
 Ahora procedemos a usar este comando junto al otro del nombre sabiendo que los días que han pasado son 344 como se muestra en la foto:
 
