@@ -81,7 +81,7 @@ Usa la documentación de find para encontrar las opciones que permiten encontrar
 
 
 ### Respuesta ejercicio 2
-Para encontrar los notebook Jupyter (ficheros con extensión ipynb) en el directorio /home/alejandro primero de todo nos metemos en el directorio y miramos los ficheros que contiene este (también los ocultos) con el comando: `ls -a`
+Para encontrar los notebook Jupyter (ficheros con extensión .ipynb) en el directorio /home/alejandro primero de todo nos metemos en el directorio y miramos los ficheros que contiene este (también los ocultos) con el comando: `ls -a`
 ![ls-a](images/ls-a.PNG)
 
 
@@ -90,13 +90,16 @@ Tras esto procedemos a buscar solo los notebook Jupiter (con extensión .ipynb) 
 
 ![find](images/find.PNG)
 
+
 Por último para buscar fecha de última modificación, empleamos el comando `man find` y encontramos que para la fecha de última modificación emplearemos el comando: 
 `find -mtime (días desde la última modificación)`
 
 ![manfind](images/manfind.png)
+![MTIME](images/MTIME.PNG)
 
 Ahora procedemos a usar este comando junto al otro del nombre sabiendo que los días que han pasado son 344 como se muestra en la foto:
-![DiasTranscurridos](images/DiasTranscurridos.png)
+
+![dias_trasncurridos](images/dias_trasncurridos.PNG)
 
 El comando empleado es:
 `find /home/alejandro/[!.]*.ipynb -mtime 344`
@@ -105,7 +108,7 @@ Y para comprobar que hemos encontrado el fichero correcto empleamos el comando:
 `ls -l /home/alejandro/un_cuaderno.ipynb`
 Que nos permite ver la fecha de última modificación del documento (17 de noviembre de 2020). 
 
-![MTIME](images/MTIME.png)
+![man_find](images/man_find.PNG)
 
 
 ## Ejercicio 3
