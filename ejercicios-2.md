@@ -75,7 +75,9 @@ Comandos introducidos:
 Tal y como se aprecia en la imágen, al copiar el enlace duro se ha generado otro enlace duro que apunta a un inodo diferente, mientras que al copiar el enlace blando se ha creado un enlace duro que apunta de nuevo a un inodo distinto al de los otros enlaces.
 
 ## Ejercicio 2
-Usa la documentación de `find` para encontrar todos los notebook Jupyter con fecha de última modificación 30 de Noviembre de 2020 que haya en tu directorio HOME. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto `.`). 
+Usa la documentación de find para encontrar las opciones que permiten encontrar todos los notebook Jupyter (ficheros con extension ipynb) con fecha de última modificación 17 de Noviembre de 2020 que haya en el directorio /home/alejandro. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto .).
+
+
 
 ### Respuesta ejercicio 2
 Para la fecha de última modificación, emplenado el comando `man find`buscamos información sobre los distintos comandos distintos que podemos emplear junto a find. Y encontramos que para la fecha de última modificación emplearemos el comando: 
