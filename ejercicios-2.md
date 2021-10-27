@@ -108,7 +108,7 @@ Y para comprobar que hemos encontrado el fichero correcto empleamos el comando:
 `ls -l /home/alejandro/un_cuaderno.ipynb`
 Que nos permite ver la fecha de última modificación del documento (17 de noviembre de 2020). 
 
-![man_find](images/man_find.PNG)
+![find344](images/find344.PNG)
 
 
 ## Ejercicio 3
