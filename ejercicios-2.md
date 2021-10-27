@@ -81,7 +81,7 @@ Usa la documentación de find para encontrar las opciones que permiten encontrar
 
 
 ### Respuesta ejercicio 2
-Para encontrar los notebook Jupyter (ficheros con extensión ipynb) en el directorio home alejandro primero de todo nos metemos en el directorio y miramos los ficheros que contiene este (también los ocultos) con el comando: `ls -a`
+Para encontrar los notebook Jupyter (ficheros con extensión ipynb) en el directorio /home/alejandro primero de todo nos metemos en el directorio y miramos los ficheros que contiene este (también los ocultos) con el comando: `ls -a`
 ![ls-a](images/ls-a.PNG)
 
 
