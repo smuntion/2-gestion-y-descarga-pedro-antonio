@@ -98,7 +98,7 @@ Por último para buscar fecha de última modificación, empleamos el comando `ma
 
 Ahora procedemos a usar este comando junto al otro del nombre sabiendo que los días que han pasado son 344 como se muestra en la foto:
 
-
+![dias_trasncurridos](images/dias_trasncurridos.PNG)
 
 El comando empleado es:
 `find /home/alejandro/[!.]*.ipynb -mtime 344`
