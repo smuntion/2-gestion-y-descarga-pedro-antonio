@@ -96,7 +96,8 @@ Por último para buscar fecha de última modificación, empleamos el comando `ma
 ![manfind](images/manfind.png)
 
 Ahora procedemos a usar este comando junto al otro del nombre sabiendo que los días que han pasado son 344 como se muestra en la foto:
-![dias_transcurridos](images/dias_transcurridos.png)
+
+
 
 El comando empleado es:
 `find /home/alejandro/[!.]*.ipynb -mtime 344`
@@ -105,7 +106,7 @@ Y para comprobar que hemos encontrado el fichero correcto empleamos el comando:
 `ls -l /home/alejandro/un_cuaderno.ipynb`
 Que nos permite ver la fecha de última modificación del documento (17 de noviembre de 2020). 
 
-![MTIME](images/MTIME.png)
+
 
 
 ## Ejercicio 3
