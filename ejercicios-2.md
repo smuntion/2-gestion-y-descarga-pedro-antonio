@@ -23,6 +23,8 @@ Hemos copiado la carpeta gtfs a otra que se llama gtfs2 después, hemos realizad
 
 ![crear-enlaces](images/crear-enlaces.jpg)
 
+COMENTARIO MIRIAM Y SANDRA no se han creado los archivos .txt (2.5)
+
 1. ¿Qué ocurre cuando se borra el origen y se intenta acceder al destino?
 
 ![borrar-origen](images/borrar-origen.png)
@@ -74,6 +76,8 @@ Comandos introducidos:
 
 Tal y como se aprecia en la imágen, al copiar el enlace duro se ha generado otro enlace duro que apunta a un inodo diferente, mientras que al copiar el enlace blando se ha creado un enlace duro que apunta de nuevo a un inodo distinto al de los otros enlaces.
 
+El ejercicio en conjunto se ha resuelto bastante bien, excepto la creacion de archivos .txt, pero la creacion de los enlaces asi como las respuestas a la eliminación de y copia de enlaces se ha resuelto de manera eficaz.
+
 ## Ejercicio 2
 Usa la documentación de find para encontrar las opciones que permiten encontrar todos los notebook Jupyter (ficheros con extension ipynb) con fecha de última modificación 17 de Noviembre de 2020 que haya en el directorio /home/alejandro. Excluye todos aquellos que se encuentren dentro de directorios ocultos (aquellos que comienzan por un punto ).
 
@@ -87,6 +91,8 @@ Para encontrar los notebook Jupyter (ficheros con extensión .ipynb) en el direc
 
 Tras esto procedemos a buscar solo los notebook Jupiter (con extensión .ipynb) que no se encuentren dentro de directorios ocultos (que empiecen por .). Para ello empleamos el comando: 
 `find /home/alejandro/[!.]*.ipynb`
+
+cOMENTARIO MYRIAM Y SANDRA: ESTA BIEN A MEDIAS PORQUE EN REALIZAD NO ESTAIS USANDO FIND, QUE ERA LO QUE SE PEDIA EN EL EJERCICIO.(1)
 
 ![find](images/find.PNG)
 
@@ -110,6 +116,8 @@ Que nos permite ver la fecha de última modificación del documento (17 de novie
 
 ![find344](images/find344.PNG)
 
+La resolucion es correcta aunque el comando utilizado no sea el mas apropiado ya que con mtime tienes que calcular manualmente la diferncias de dias en el tiempo.
+ellos no han llegado la especificas las condicioens posibles atraves de la Logica buleana pero que a fecha de hoy no tenemos porque saber.
 
 ## Ejercicio 3
 Descarga, empleando la orden oportuna, todos los ficheros [de esta URL](ftp://ftp.ensembl.org/pub/release-102/gtf/accipiter_nisus/). 
@@ -147,3 +155,5 @@ Finalmente generamos un fichero SHA-1 con los cheksums para los dos ficheros .gz
 ![shasum](images/shasum.PNG)
 
 Fichero SHA-1: [gtf.gz-cheksums.sha](documents/gtf.gz-cheksums.sha)
+
+cOEMNTARIO DE SANDRA Y MIRIAM EL EJERCICIO ESTA RESUELTO CORRECTAMENTE.(3.3)
